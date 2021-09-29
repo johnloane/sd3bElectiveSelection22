@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1> Register for electives</h1>
+
+<form action ="/register" method="post">
+    <input autocomplete="off" autofocus placeholder="Name" type="text">
+    <select name="elective">
+        <option disabled selected value="">Elective</option>
+        <option value = "Smart Technology">Smart Technology</option>
+        <option value = "Artificial Intelligence">Artificial Intelligence</option>
+        <option value = "Immersive Technologies">Immersive Technologies</option>
+        <option value = "Service Oriented Architecture">Service Oriented Architecture</option>
+    </select>
+    <input type="submit" value="Register">
+
+</form>
+
+{% endblock %}
