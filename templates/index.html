@@ -4,7 +4,7 @@
 <h1> Register for electives</h1>
 
 <form action ="/register" method="post">
-    <input name="name" autocomplete="off" autofocus placeholder="Name" type="text">
+    <input name="email" autocomplete="off" autofocus placeholder="Email" type="text">
     <select name="elective">
         <option disabled selected value="">Elective choice</option>
         {% for elective in electives %}
