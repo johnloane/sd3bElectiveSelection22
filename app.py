@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_mysqldb import MySQL
-import os
 
 import os
-import re
 
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
@@ -19,7 +17,7 @@ app.config["MAIL_USERNAME"] = os.getenv("MAIL_USERNAME")
 
 mail = Mail(app)
 
-app = Flask(__name__)
+
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
